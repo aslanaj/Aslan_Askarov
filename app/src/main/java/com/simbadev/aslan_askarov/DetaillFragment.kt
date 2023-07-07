@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.simbadev.aslan_askarov.databinding.FragmentDetaillBinding
 
-class DetaillFragment : Fragment() {
+class DetailFragment : Fragment() {
 
 
 
@@ -32,8 +32,8 @@ class DetaillFragment : Fragment() {
 
         binding.apply {
             tvTitle.text = navArgs.cars.carsName
-            tvDetail.text = navArgs.cars.heroesStatus
-            imgFirst.loadImage(navArgs.cars.heroesImage)
+            tvDetail.text = navArgs.cars.carsDetail
+            imgFirst.loadImage(navArgs.cars.carsImage)
         }
 
     }

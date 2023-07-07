@@ -3,10 +3,9 @@ package com.simbadev.aslan_askarov
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.simbadev.aslan_askarov.databinding.ItemLayoutBinding
 
-class Adapter(val heroesList: ArrayList<Model>,
+class Adapter(val carsList: ArrayList<Model>,
               val onClick: (cars: Model)->Unit): RecyclerView.Adapter <Adapter.AdapterViewHolder>(){
 
 
@@ -14,9 +13,9 @@ class Adapter(val heroesList: ArrayList<Model>,
        fun bind() {
            val cars = carsList[adapterPosition]
            binding.apply {
-               tvDesc.text = cars.heroesStatus
-               tvTitle.text = cars.heroesName
-               imgFirst.loadImage(cars.heroesImage)
+               tvDesc.text = cars.carDetail
+               tvTitle.text = cars.carName
+               imgFirst.loadImage(cars.carImage)
            }
            itemView.setOnClickListener {
                onClick.invoke(cars)

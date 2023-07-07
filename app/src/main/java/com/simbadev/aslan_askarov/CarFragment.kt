@@ -11,7 +11,7 @@ import com.simbadev.aslan_askarov.databinding.FragmentCarBinding
 
 class CarFragment : Fragment() {
     private lateinit var binding: CarFragment
-    private lateinit var heroesList: ArrayList<Model>
+    private lateinit var carsList: ArrayList<Model>
 
 
     override fun onCreateView(
@@ -32,7 +32,7 @@ class CarFragment : Fragment() {
 
     private fun loadData() {
         carsList = ArrayList<Model>()
-        heroesList.apply {
+        carsList.apply {
             add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
             add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
             add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
@@ -48,7 +48,7 @@ class CarFragment : Fragment() {
 
     private fun onClick(cars: Model) {
 
-        findNavController().navigate(CarFragment.actionFirstFragmentToSecondFragment(heroes))
+        findNavController().navigate(CarFragment.actionFirstFragmentToSecondFragment(cars))
 
     }
 
