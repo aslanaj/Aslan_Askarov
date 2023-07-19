@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.simbadev.aslan_askarov.databinding.FragmentDetaillBinding
 
-class DetailFragment : Fragment() {
+class DetaillFragment : Fragment() {
 
 
 
-    private lateinit var binding: DetaillFragment
-    private lateinit var navArgs: CarFragment
+    private lateinit var binding: FragmentDetaillBinding
+    private lateinit var navArgs: DetaillFragment
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,16 +25,16 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        arguments?.let {
-            navArgs = CarFragment().fromBundle(it)
+     /*  arguments?.let {
+            navArgs = DetaillFragment.fromBundle(it)
         }
 
 
         binding.apply {
-            tvTitle.text = navArgs.cars.carsName
-            tvDetail.text = navArgs.cars.carsDetail
-            imgFirst.loadImage(navArgs.cars.carsImage)
-        }
+            tvTitle.text = navArgs.car.carTitle
+            tvDesc.text = navArgs.car.carsDetail
+            imgFirst.loadImage(navArgs.car.carsImage)
+        }*/
 
     }
 

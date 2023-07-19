@@ -10,9 +10,8 @@ import com.simbadev.aslan_askarov.databinding.FragmentCarBinding
 
 
 class CarFragment : Fragment() {
-    private lateinit var binding: CarFragment
+    private lateinit var binding: FragmentCarBinding
     private lateinit var carsList: ArrayList<Model>
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,22 +32,101 @@ class CarFragment : Fragment() {
     private fun loadData() {
         carsList = ArrayList<Model>()
         carsList.apply {
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
-            add(Model("BMW","M% comp","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg/640px-Kunmadaras_Motorsport_2021._szeptember_19._JM_%28157%29.jpg"))
+            add(
+
+
+
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://s1.avilon.ru/upload/resize_cache/iblock/e15/531_0_1/e1595c450af48c4ff61bcbe38b0c6bb9.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://s1.avilon.ru/upload/resize_cache/iblock/e15/531_0_1/e1595c450af48c4ff61bcbe38b0c6bb9.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                )
+            )
+            add(
+                Model(
+                    "BMW",
+                    "2020",
+                    "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                )
+            )
+            add (
+                    Model(
+                        "BMW",
+                        "2020",
+                        "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                    )
+                    )
+            add (
+                    Model(
+                        "BMW",
+                        "2020",
+                        "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                    )
+                    )
+            add (
+                    Model(
+                        "BMW",
+                        "2020",
+                        "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                    )
+                    )
+            add (
+                    Model(
+                        "BMW",
+                        "2020",
+                        "https://cars.bmw-rolf.ru/upload/resize_cache/iblock/090/700_600_1/090c54708be03780c7962c085f80a305.png"
+                    )
+                    )
+
 
         }
     }
 
     private fun onClick(cars: Model) {
 
-        findNavController().navigate(CarFragment.actionFirstFragmentToSecondFragment(cars))
+   //     findNavController().navigateUp()
 
     }
 
